@@ -1,0 +1,65 @@
+ /*  
+Description: Responsive Build
+Author: Kyle Anderson
+
+*/			
+* { margin: 0; padding: 0; }
+article, aside, figure, footer, header, nav, section { display: block; }
+body {padding: 0px; margin: 0px; font: 12px Georgia, serif; }
+.wrapper {  width: 100%; clear: both; background-color: white;}
+.container { margin: 0px auto; background: white; max-width: 800px; min-width: 300px;}
+
+/******************** header ******************/
+.pottery-barn {display: block; float: left; width: 65%; clear: both;}
+.pottery-barn h1 {color: #989898; font-weight: 300; font-size: 40px; margin: 0; padding-top: 10px; position: relative;}
+.pottery-barn h1 span {color: #9cc8db ;}
+.pottery-barn h1 a {text-decoration: none; text-transform: lowercase; color: #989898;}
+.lego {float: right; width: 35%; display: block; padding-top: 10px; position: relative;}
+.lego img {padding: 0 0 10px 0;}
+/*************** Main content ******************/
+.wrapper.main-content{border-top: 5px solid #004a8d;}
+.main_img { width: 44.5%; display: block; float: left; }
+.main_img {padding: 25px 0 25px 0px; margin: 0px; }
+.main_img img {max-width: 100%;}
+.content { width: 51.5%; display: block; float: right; padding: 25px 0 25px 0px; margin-left: 4%; position: relative; background: url("../images/girl-boy.png") bottom no-repeat; }
+.content h1 {text-align: center; font-size: 45px; font-weight: 200; color: #004a8d; margin: 0px; text-transform: uppercase; line-height: 38px; }
+.content h1 .build {text-align: left;}
+.content h1 span {color: #d21242}
+.content h5 {color: #d21242;}
+.content ul li {margin-left: 17px;}
+.content .sweapstakes {padding: 0 0 10px 0;}
+.content .email {color: #2570a6}
+.content .prizes p {padding: 10px 0 10px 0; margin: 0 0 5px 0; font-size: 14px; font-weight: bold; color: #646464;}
+.content .prizes ul {margin: 0 0 5px 0;}
+.content .prizes ul li {color: #646464;}
+.imgClass { background-image: url("../images/submit.png"); vertical-align: middle; width: 119px; height: 25px; background-repeat: no-repeat; background-position: 0px 0px; cursor: pointer; margin: 0 0 0 25px; border: 0px }
+
+/******************* FOOTER ******************/
+.footer-content ul {text-align: center; margin: 10px 0 10px 0;}
+.footer-content ul li {list-style-type: none; display: inline; border-right: 2px solid #989898;; padding: 0 10px 0 10px;}
+.footer-content ul li:last-child {border-right: none}
+.footer-content ul li a {text-decoration: none; color: #6e6e6e; } 
+.footer-content ul li a p {display: inline;}
+.footer-content .details { text-align: center; color: #a5a0a0; 
+	-webkit-transition: color 2s, font-size 2s;
+    -moz-transition: color 2s, font-size 2s;
+    -o-transition: color 2s, font-size 2s;
+    transition: color 2s, font-size 2s;
+}
+.footer-content p:hover{ font-size: 20px; color: black; }
+
+/****************** Phone and Tablets *********************/
+@media (min-width: 1px) and (max-width: 781px) {
+
+	.wrapper.header h1 {margin: 0px auto; display: block; float: none; text-align: center; width: 350px; max-width: 350px;}
+	.pottery-barn {width: 100%;}
+	.content{padding-top: 0px;}
+	.content h1	{font-size: 35px;}
+	.lego {width: 100%;}
+	.lego img {margin: 0px auto; display: block; float: none; text-align: center;}
+	.main_img {display: block; float: none; margin: 0 auto;}
+	.content{float: none; display: block; background-image: none; width: auto; }
+	.footer-content .details{ margin: 5px 15px 15px; text-align: left;}	
+}
+
+
